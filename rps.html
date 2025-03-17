@@ -1,0 +1,33 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+  </head>
+  <body class="bg-gray-800 text-white">
+    <div class="flex justify-around mt-3">
+      <button onclick="reset();" class="p-2 border-2 bg-gray-950 rounded-xl hover:bg-green-600">reset</button>
+      <button onclick="autoplay();" class="p-2 border-2 bg-gray-950 rounded-2xl hover:bg-green-600">autoplay</button>
+     </div>
+    <div class="flex justify-center">
+    <div  class="bg-gray-850 h-80 w-160 rounded-2xl shadow-2xl border-gray-950 border-4 mb-5 mt-4">
+      <div>
+        <h1 align="center" class="p-8 text-2xl">Rock paper Sissor Game</h1>
+      </div>
+      <div class=" flex justify-center">
+        <button onclick=" playgame('rock');"><img src="./photos/rock.png" class="w-40 h-40 mb-2">Rock</button>
+        <button onclick="playgame('paper');"><img src="./photos/paper.png" class="w-40 h-40 mb-2">paper</button>
+        <button onclick=" playgame('sissor'); "><img src="./photos/scizzors.png" class="w-40 h-40 mb-2">scissor</button>
+      </div>
+      </div></div>
+      <div class="flex flex-col items-center">
+       <div id="scorecard" class="p-6 border-green-600 mb-5 rounded-2xl  md:w-1/2 text-center flex flex-row justify-around sm:w-full"></div>
+      <div id="scorecard1" class="p-4 border-green-600 mb-5 rounded-2xl w-1/2 text-center"></div>
+      <div id="scorecard2" class="p-6 border-green-600 mb-3 rounded-2xl w-1/2 text-center flex justify-around"></div>
+    </div>
+     <script src="script.js"></script>
+  </body>
+  </html>
